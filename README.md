@@ -6,3 +6,4 @@
 * The player will then have the opportunity to select Play Again or Exit the game.
 * Link to the Trello Board [https://trello.com/b/9iZOWsWE/ga-project-1] 
 * Link to the Wireframe - Wireframe-1 [https://wireframe.cc/aiDVvk] , Wireframe-2 [https://wireframe.cc/iu06z9]
+* Link to the API [https://opentdb.com/api.php]
