@@ -12,3 +12,6 @@
 ![Wireframe-1](https://wireframe.cc/aiDVvk "Wireframe-1")
 
 ![Wireframe-1](https://wireframe.cc/iu06z9 "Wireframe-1")
+<img width="1022" alt="TJ WF Page-1" src="https://user-images.githubusercontent.com/19157071/195879743-dc3de503-9c09-402f-bd5e-b35258c71578.png">
+
+<img width="944" alt="TJ WF Page-2" src="https://user-images.githubusercontent.com/19157071/195879776-98c96eda-5e35-40f1-8462-44c4937c1904.png">
