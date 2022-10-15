@@ -24,29 +24,50 @@ question.innerText = res.results[0].question
 let correct_answer = document.querySelector(`#answer`)
 correct_answer.innerText = res.results[0].correct_answer
 
-       })
+// if (correct_answer) (`${textInput}`) .then(res => {
+//     return Yes
+// function getChecked() {
+//     const textInput = document.getElementById('inputBar').checked;
+//     if (textInput === true) {
+//       console.log(true);
+//       } else {
+//         console.log(false);
+//     }
+//   }
+
+const textInput = () => {
+    let input = document.querySelector("#inputBar");
+    if(input.value.toLowerCase() === "correct_answer"){
+        console.log("Correct");
+    }
+}
+
+
+
+}) 
+
+       }
 
     //    let btnValue = document.querySelector("#btnValue")
     //    btnValue.innerText = "Question: " + res.btnValue
 
     
-
-        .catch( err => {
-            console.log("error!", err)
+    
+        // .catch( err => {
+        //     console.log("error!", err)
             
-        })
-
-       
-}
+ 
  
 // trivia_category.addEventListener("click", getData)
 // trivia_difficulty.addEventListener("click", getData)
 // trivia_type.addEventListener("click", getData)
 
 let button = document.querySelector("#btnValue").addEventListener("click", getData)
+
+
        // pokemonHeight.innerText = "Height: " + res.height
     
- 
+    
 
  //1 Attach Event to button  
 // button.addEventListener("click", getData)
