@@ -4,39 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivia</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Trivia Junction</title>
+	
+	<link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<h1>Trivia Junction</h1>
 </head>
 <body>
-    <h1>Trivia Junction</h1>
-    
-	    <br>
-        <h3 id="question"></h3>
+	<div class="container">
+		<div id="loader"></div>
+		<div id="game" class="justify-center flex-column hidden">
+		  <div id="triv">
+			<div id="triv-item">
+			  <p id="progressText" class="triv-prefix">
+				Question
+			  </p>
+			  <div id="progressBar">
+				<div id="progressBarFull"></div>
+			  </div>
+			</div>
+			<div id="triv-item">
+			  <p class="triv-prefix">
+				Your Score
+			  </p>
+			  <h1 class="triv-main-text" id="score">
+				0
+			  </h1>
+			</div>
+		  </div>
+		  <h2 id="question"></h2>
+		  <div class="choice-container">
+  <!--           <p class="choice-prefix">A</p> -->
+			<p class="choice-text" data-number="1"></p>
+		  </div>
+		  <div class="choice-container">
+  <!--           <p class="choice-prefix">B</p> -->
+			<p class="choice-text" data-number="2"></p>
+		  </div>
 
-        <button class="btn" id="btnValue" type="submit">Random Question</button>
-	</form>
-
-        <br>
-    <div>
-        <h4 id="answer"></h4>
-    </div>
-	   <br>
-
-
-   
-        <br>
-        <br>
-
-        <input type="text" id="myText">
-        <button id="userInput">Test this</button>
-
-        <p id="demo"></p>
-
-        <br>
-        
-	</form>
-</div>
-
-         <script src="script.js"></script>
-    </body>
-</html>
+		  </div>
+		</div>
+	  </div>
+	  <a class="btn" href="/index.html">Do You Want To Play Again?</a>
+	  <script src="script.js"></script>
+	</body>
+  </html>
