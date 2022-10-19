@@ -62,6 +62,7 @@ const total_questions = 11;
 startGame = () => {
     questionCounter = 0;
     score = 0;
+    // Use spread operator to get a full copy of all questions from questions array //
     availableQuestions = [...questions];
     console.log(availableQuestions);
     getNewQuestion();
@@ -72,14 +73,17 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= total_questions) {
         localStorage.setItem('mostRecentScore', score);
     }
+    
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${total_questions}`;
     progressBarFull.style.width = `${(questionCounter / total_questions) * 100}%`;
 
+    // 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question;
 
+    // Get number property from dataset - from current question get choice and use number to get the appropriate choice from current question //
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
         choice.innerHTML = currentQuestion['choice' + number];
@@ -91,6 +95,7 @@ getNewQuestion = () => {
 
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
+        console.log(e.target)
         if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
