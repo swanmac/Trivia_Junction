@@ -21,7 +21,8 @@ h1 {
 h2 {
     font-size: 40px;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
+    width: 95%;
 }
 
 .choice-container {
@@ -50,7 +51,7 @@ h2 {
     background-color: red;
   }
   
-  /* triv */
+
   
   #triv{
     display: flex;
@@ -78,5 +79,11 @@ h2 {
     font-size: 20px;
     margin: 4px 2px;
 }
+
+#game {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
   
