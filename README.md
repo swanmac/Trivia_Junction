@@ -15,4 +15,4 @@
 <img width="944" alt="TJ WF Page-2" src="https://user-images.githubusercontent.com/19157071/195879776-98c96eda-5e35-40f1-8462-44c4937c1904.png">
 
 
-<img src="/Users/gregswan/Desktop/wf-3.png" alt="Wireframe3>
+<img src="images/wf-3.png" alt="Wireframe3>
