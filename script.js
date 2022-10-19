@@ -6,7 +6,6 @@ console.log(choices);
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
-const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -34,7 +33,9 @@ fetch(
             };
 
             const answerChoices = [...loadedQuestion.incorrect_answers];
-            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+            formattedQuestion.answer = Math.floor(Math.random() * 1) + 2;
+            console.log(formattedQuestion.answer)
+
             answerChoices.splice(
                 formattedQuestion.answer - 1,
                 0,
@@ -62,9 +63,9 @@ startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
+    console.log(availableQuestions);
     getNewQuestion();
     game.classList.remove('hidden');
-    loader.classList.add('hidden');
 };
 
 getNewQuestion = () => {
@@ -95,6 +96,8 @@ choices.forEach((choice) => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
+
+        console.log(selectedAnswer == currentQuestion.answer);
 
         const classToApply =
             selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
