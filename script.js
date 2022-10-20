@@ -4,22 +4,19 @@ const question = document.getElementById('question');
 // Convert choices into an array to be able to use array functions - data set plus number will indicate number, currently 1 & 2 respectively //
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 console.log(choices);
-const progressText = document.getElementById('progressText');
-const scoreText = document.getElementById('score');
 const game = document.getElementById('game');
+const scoreText = document.getElementById('score');
+const progressText = document.getElementById('progressText');
+let availableQuestions = [];
+let questions = [];
+let questionCounter = 0;
+let score = 0;
 let currentQuestion = {};
 let acceptingAnswers = false;
-let score = 0;
-let questionCounter = 0;
-let availableQuestions = [];
 let answerIndex = 0;
 function randomAnswer () {
     answerIndex = Math.floor(Math.random() * 1) + 2;
 }
-
-let questions = [];
-console.log(questions);
-
 
 fetch(
     'https://opentdb.com/api.php?amount=10&type=boolean'
@@ -32,7 +29,7 @@ fetch(
             const formattedQuestion = {
                 question: loadedQuestion.question,
             };
-
+            console.log(loadedQuestions);
             // Creates random answers from the answer choices //
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 1 + Math.ceil(Math.random() *2));
@@ -80,6 +77,7 @@ getNewQuestion = () => {
         return
     } else {questionCounter++;}
 
+    // template literal question count and total questions in progress text //
     progressText.innerText = `Question ${questionCounter}/${total_questions}`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
