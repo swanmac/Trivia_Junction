@@ -29,7 +29,6 @@ fetch(
             const formattedQuestion = {
                 question: loadedQuestion.question,
             };
-            console.log(loadedQuestions);
             // Creates random answers from the answer choices //
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 1 + Math.ceil(Math.random() *2));
@@ -38,7 +37,6 @@ fetch(
             answerChoices.splice(formattedQuestion.answer - 1, 0,
             loadedQuestion.correct_answer
             );
-            console.log(formattedQuestion.answer);
 
             // Reference to each answer choice and it's index, then formatted question (choice + index + 1) then assign a choice //
             answerChoices.forEach((choice, index) => {
@@ -64,7 +62,7 @@ startGame = () => {
     score = 0;
     // Use spread operator to get a full copy of all questions from questions array //
     availableQuestions = [...questions];
-    console.log(availableQuestions);
+    // console.log(availableQuestions);
     getNewQuestion();
     game.classList.remove('hidden');
     randomAnswer()
