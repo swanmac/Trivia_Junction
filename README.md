@@ -7,7 +7,7 @@
 * If the answer choice selection turns green and is correct, a score unit of 5 will be added to the Your Score counter.
 * If the answer choice selection turns red and is incorrect, no score unit will be added to the Your Score counter.
 * After the answer choice selection is made, and the score counter is updated if needed, the next true/false question will be generated.
-* New true false questions will be generated after each questions is answered, regardless if the answer is correct or incorrect until the total questions equals 10 of 10.
+* New true false questions will be generated after each question is answered, regardless if the answer is correct or incorrect until the total questions equals 10 of 10.
 * The score units, at 5 each, will tally up for each correct answer, giving a grand total score at the end of the 10 question play.
 * At the point when the Question total reaches 10 of 10 (Question 10/10) the player will then have the opportunity to select "Do You Want To Play Again" button to restart the game.
 * Link to the Trello Board [https://trello.com/b/9iZOWsWE/ga-project-1] 
@@ -16,4 +16,4 @@
 
  
 
-<img src="images/wf-3.png" alt="Wireframe3">
+<img src="images/wf-4.png" alt="Wireframe3">
