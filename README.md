@@ -12,9 +12,9 @@
 * New true false questions will be generated after each question is answered, regardless if the answer is correct or incorrect until the total questions equals 10 of 10.
 * The score units, at 5 each, will tally up for each correct answer, giving a grand total score at the end of the 10 question play.
 * At the point when the Question total reaches 10 of 10 (Question 10/10) the player will then have the opportunity to select "Do You Want To Play Again" button to restart the game.
-* Link to the _Trello Board_ [https://trello.com/b/9iZOWsWE/ga-project-1] 
-* Link to the _Wireframe_ - Wireframe-1 [https://wireframe.cc/aiDVvk]
-* Link to the _API_ [https://opentdb.com/api.php]
+* _Link to the Trello Board_ [https://trello.com/b/9iZOWsWE/ga-project-1] 
+* _Link to the Wireframe_ - Wireframe-1 [https://wireframe.cc/aiDVvk]
+* _Link to the API_ [https://opentdb.com/api.php]
 
  
 
