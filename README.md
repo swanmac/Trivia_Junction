@@ -1,6 +1,6 @@
 # Trivia_Junction
 ## A True/False Trivia Game 
-### The Questions are from many categories and three difficulty levels
+### The Questions are from 24 different categories and three difficulty levels
 * Trivia game with questions from various categories and difficulty levels separated into true/false questions. 
 * The game begins with the game board showing the question counter on the top left at (Question 1/10) and the score showing 0 in the Your Score section in the top right.
 * The true/false questions will load just below the question counter and the score. The player will examine the question and decide on a true/false answer.
