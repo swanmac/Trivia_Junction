@@ -75,7 +75,6 @@ startGame = () => {
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= total_questions) {
-        localStorage.setItem('mostRecentScore', score);
     }
     if (questionCounter >= questions.length) {
         return
